@@ -1,24 +1,18 @@
-# ScholarSparkHub Android wrapper
+# ScholarSparkHub Android
 
-This Android project opens the existing ScholarSparkHub app in a native Android WebView.
+A simple Android WebView wrapper for the ScholarSparkHub web app.
 
-Website: https://scholar-spark-hub-99.lovable.app
+Website: https://scholar-spark-hub-99.lovable.app/
 
-## Build using GitHub Actions
+## Build with GitHub Actions
 
-1. Extract this ZIP on your phone or computer.
-2. Open your GitHub repository `ScholarSparkHub-Android`.
-3. Choose **Add file → Upload files**.
-4. Upload the *contents* of this extracted folder (including the hidden `.github` folder), not the ZIP itself.
-5. Commit the files to the `main` branch.
-6. Open the repository's **Actions** tab.
-7. Select **Build ScholarSparkHub APK** and tap **Run workflow** if it has not started automatically.
-8. When the run completes, open it and download the artifact named `ScholarSparkHub-debug-apk`.
-9. Extract the downloaded artifact ZIP; install `app-debug.apk` on your Android phone.
+1. Upload the contents of this project to the repository root.
+2. Commit to the `main` branch.
+3. Open **Actions** and select **Android CI**.
+4. Open the successful run.
+5. Download the artifact named `ScholarSparkHub-debug-apk`.
+6. Extract it and install `app-debug.apk` on an Android phone.
 
-## Notes
+## Important
 
-- This is a WebView wrapper, not a copy of the Lovable website source code.
-- The website and its login/backend remain hosted by Lovable, so an internet connection is required.
-- GitHub Actions creates a debug-signed APK for testing and personal installation. A Play Store/release build needs a separately managed signing key.
-- Never upload passwords, API secrets, or signing keys to this repository.
+This project is a WebView wrapper. It does not contain the Lovable website source code. Internet access is required when the app loads the website.

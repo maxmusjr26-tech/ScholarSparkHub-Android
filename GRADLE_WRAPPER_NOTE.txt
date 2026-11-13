@@ -1,0 +1,8 @@
+# Gradle wrapper
+
+This project is configured for Gradle 8.11.1. The GitHub Actions workflow expects
+`gradlew` and `gradle/wrapper/gradle-wrapper.jar` to be present.
+
+If the wrapper JAR is not present after extraction, open the project in Android
+Studio/Gradle and run `gradle wrapper --gradle-version 8.11.1`, or generate the
+wrapper with a local Gradle installation before pushing to GitHub.
